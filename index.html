@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/marmeto_logo.webp" alt="Furniture Store Logo">
+                <h1>Marmeto</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-heart"></i></a>
+                <a href="#" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-header">
+            <img src="images/marmeto_logo.webp" alt="Furniture Store Logo" height="40px" width="40px">
+            <h1>Cart</h1>
+            <div class="breadcrumb">
+                <a href="#">Home</a> / <span>Cart</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Loading Spinner -->
+            <div id="loader" class="loader">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="cart-container">
+                <!-- Cart Items Section -->
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="product-info">Product</div>
+                        <div class="price">Price</div>
+                        <div class="quantity">Quantity</div>
+                        <div class="subtotal">Subtotal</div>
+                        <div class="remove"></div>
+                    </div>
+                    <div id="cart-items-container"></div>
+                    <div class="cart-actions">
+                        <button class="continue-shopping">Continue Shopping</button>
+                        <button class="update-cart">Update Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cart Totals Section -->
+                <div class="cart-totals">
+                    <h2>Cart Totals</h2>
+                    <div class="totals-content">
+                        <div class="subtotal-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">₹0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Total</span>
+                            <span id="total">₹0.00</span>
+                        </div>
+                        <button id="checkout-btn" class="checkout-btn">
+                            Proceed to Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="services">
+            <div class="service-item">
+                <i class="fas fa-trophy"></i>
+                <h3>High Quality</h3>
+                <p>crafted from top materials</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Warranty Protection</h3>
+                <p>Over 2 years</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Free Shipping</h3>
+                <p>Order over 150 $</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-headset"></i>
+                <h3>24 / 7 Support</h3>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for item removal confirmation -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h3>Remove Item</h3>
+            <p>Are you sure you want to remove this item from your cart?</p>
+            <div class="modal-buttons">
+                <button id="confirm-remove" class="btn-danger">Yes, Remove</button>
+                <button id="cancel-remove" class="btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
