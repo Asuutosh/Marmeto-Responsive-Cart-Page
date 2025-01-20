@@ -15,21 +15,6 @@ A fully responsive e-commerce shopping cart implementation built with HTML, CSS,
 - 🛡️ Error handling and user feedback
 - 🎨 Modern UI with smooth animations
 
-## 🖥️ Demo
-
-[View Live Demo](your-deployed-url-here)
-
-## 📸 Screenshots
-
-### Desktop View
-[Add desktop screenshot here]
-
-### Mobile View
-[Add mobile screenshot here]
-
-### Shop Page
-[Add shop page screenshot here]
-
 ## 🛠️ Technologies Used
 
 - HTML5
@@ -60,19 +45,6 @@ responsive-cart/
 └── README.md    # Documentation
 ```
 
-## 🚀 Setup and Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/marmeto-cart.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd marmeto-cart
-```
-
-3. Open with live server or directly open `index.html` in your browser.
 
 ## 💡 Key Features Implementation
 
@@ -158,22 +130,12 @@ cd marmeto-cart
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Design inspiration from Marmeto
 - Font Awesome for icons
 - Google Fonts for typography
 - Unsplash for product images
-
-## 📞 Contact
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/your-username/marmeto-cart](https://github.com/your-username/marmeto-cart)
 
 ## 📝 Version History
 
